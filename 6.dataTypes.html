@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+      // Numbers:
+      let length = 16;
+      let weight = 7.5;
+
+      // Strings:
+      let color = "Yellow";
+      let lastName = "Johnson";
+
+      // Booleans
+      let a = true;
+      let b = false;
+
+      // Object:
+      const person = { firstName: "John", lastName: "Doe" };
+
+      // Array object:
+      const cars = ["Saab", "Volvo", "BMW"];
+
+      // Date object:
+      const date = new Date("2022-03-25");
+    </script>
+    <script>
+      let x = 5;
+      let y = "5";
+      let z = 6;
+      document.getElementById("demo").innerHTML =
+        (x == y) + "<br>" + (x === y) + "<br>" + (z == x);
+    </script>
+    <script>
+      document.getElementById("demo1").innerHTML = typeof 3;
+    </script>
+  </body>
+</html>
