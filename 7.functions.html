@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function myFunction(number1,number2) {
+            return number1 * number2 ;
+        }
+        document.getElementById("demo").innerHTML = myFunction(5,2);
+    </script>
+    <button type="button" onclick="alert(myFunction(5,2))">5 * 2</button>
+    <br>
+    <button type="button" onclick="document.write(myFunction(5,3))">5 * 3</button>
+    <br>
+    <script>
+        function myFunction1(x,y) {
+            return x + y;
+        }
+        let a = myFunction1(4,3);
+    </script>
+    <button type="button" onclick="alert(a)">A</button>
+    <br>
+</body>
+</html>
