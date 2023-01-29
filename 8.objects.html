@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let car = {type: "BMW", model: "2020", color: "black"};
+        document.getElementById("demo").innerHTML = "The car model is: " + car.model;
+    </script>
+    <script>
+        let person = {firstName: "Mert", lastName: "Kaya", age:"23"};
+    </script>
+        <button type="button" onclick="alert(person.firstName)">Person First Name</button>
+        <button type="button" onclick="alert(person.lastName)">Person Last Name</button>
+        <button type="button" onclick="alert(person.age)">Person Age</button>
+        <br>
+        <script>
+            function fullNamePerson(firstName,lastName) {
+                return firstName + " " + lastName;
+            }
+            const fullName = fullNamePerson("Mert","Kaya");
+        </script>
+        <button type="button" onclick="alert(fullName)">Full Name</button>
+        <br>
+        <p id="demo2"></p>
+        <script>
+            const person1 = {
+                firstName: "Mert",
+                lastName: "Kaya",
+                age: "23",
+                eyeColor: "Hazel",
+                personFull: function () {
+                    return this.firstName + " " +  this.lastName + " " + this.age  + " " + this.eyeColor + " eyes."
+                }
+            }
+            document.getElementById("demo2").innerHTML = person1.personFull();  
+        </script>
+</body>
+</html>
