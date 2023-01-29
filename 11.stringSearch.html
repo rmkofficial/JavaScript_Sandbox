@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let str = "ramazan mert kaya";
+      function index() {
+        document.getElementById("demo").innerHTML = str.indexOf("mert");
+      }
+    </script>
+    <button type="button" onclick="index()">Try</button>
+    <p id="demo1"></p>
+    <script>
+      let str1 = "ramazan mert kaya";
+      document.getElementById("demo1").innerHTML = str.search("kaya");
+    </script>
+    <script>
+      let text = "The rain in SPAIN stays mainly in the plain";
+      const myArr = text.match("ain");
+      document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+    </script>
+    <p id="demo2"></p>
+    <script>
+        let text1 = "Ramazan Mert Kaya";
+        document.getElementById("demo2").innerHTML = text1.includes("Mert");
+    </script>
+  </body>
+</html>
