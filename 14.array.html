@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <br />
+    <p id="demo1"></p>
+    <br />
+    <p id="demo2"></p>
+    <br />
+    <p id="demo3"></p>
+    <br />
+    <p id="demo4"></p>
+    <br />
+    <p id="demo5"></p>
+    <br>
+    <p id="demo6"></p>
+
+    <script>
+      const cars = [];
+      cars[0] = "BMW";
+      cars[1] = "AUDI";
+      cars[2] = "MERCEDES";
+      document.getElementById("demo").innerHTML = cars;
+    </script>
+
+    <script>
+      const cars1 = ["bmw", "audi", "mercedes"];
+      document.getElementById("demo1").innerHTML = cars1[0];
+    </script>
+
+    <script>
+      const cars2 = ["Saab", "Volvo", "BMW"];
+      cars2[0] = "Opel";
+      document.getElementById("demo2").innerHTML = cars2;
+    </script>
+
+    <script>
+      const fruit = ["apple", "banana", "orange"];
+      const fruitLength = fruit.length;
+      function length() {
+        document.getElementById("demo3").innerHTML = fruitLength;
+      }
+    </script>
+    <button type="button" onclick="length()">Length</button>
+    <br>
+
+    <script>
+      const names = ["ramazan", "mert", "kaya"];
+      document.getElementById("demo4").innerHTML = names[names.length - 2];
+    </script>
+
+    <script>
+      const fruits = ["apple", "banana", "orange"];
+      let fLeng = fruits.length;
+
+      let text = "<ul>";
+      for (let i = 0; i < fLeng; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+      text += "</ul>";
+
+      document.getElementById("demo5").innerHTML = text;
+    </script>
+
+    <script>
+        const name = ["ramazan", "mert"];
+        document.getElementById("demo6").innerHTML = name;
+
+        function myFunction() {
+            name.push("kaya");
+            document.getElementById("demo6").innerHTML = name;
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Name Push</button>
+  </body>
+</html>
