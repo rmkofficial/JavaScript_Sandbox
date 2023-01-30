@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <br />
+    <p id="demo2"></p>
+
+    <!-- The splice() method can be used to add new items to an array: -->
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits;
+
+      fruits.splice(2, 0, "Lemon", "Kiwi");
+      document.getElementById("demo1").innerHTML = fruits;
+    </script>
+
+    <!-- The slice() method slices out a piece of an array into a new array -->
+    <script>
+      const fruits1 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+      const citrus = fruits1.slice(3);
+      document.getElementById("demo2").innerHTML = fruits1 + "<br><br>" + citrus;
+    </script>
+  </body>
+</html>
